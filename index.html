@@ -10,21 +10,40 @@
   </head>
   <body>
     <div class="login-box">
-      <h1>Log in</h1>
-      <div class="textbox">
-        <input type="text" placeholder="Username" value="" />
+      <div class="usernameinfo">
+        <h1>Welcome to the khan name identifier</h1>
+        <p>
+          The log in form will take in your information and give you back you
+          khan name
+        </p>
       </div>
-
-      <div class="textbox">
+      <div class="login-info info">
+        <label class="label" for="Username">Name:</label>
+        <input type="text" name="Username" class="username" />
+      </div>
+      <div class="date-info info">
+        <label for="date">Date of birth</label>
         <input
-          type="date"
-          placeholder="Date of birth"
-          name="Dateofbirth"
-          value=""
+          type="number"
+          name="date"
+          class="date"
+          min="1"
+          max="31"
+          required
         />
       </div>
-
-      <input class="button" type="button" name=" Sign in" value="Sign in" />
+      <div>
+        <div class="month-info info">
+          <label class="label" for="month">Month</label>
+          <input type="number" name="month" class="month" min="1" max="31" />
+        </div>
+        <div class="year-info info">
+          <label class="label" for="year">Year of birth</label>
+          <input type="number" class="year" name="year" min="0" />
+        </div>
+        <button class="button">Submit</button>
+      </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
