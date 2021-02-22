@@ -17,18 +17,15 @@
           khan name
         </p>
       </div>
-      <div class="login-info info">
-        <label class="label" for="Username">Name:</label>
-        <input type="text" name="Username" class="username input" />
-      </div>
       <div class="date-info info">
-        <label for="date">Date of birth</label>
+        <label for="date" class="label">Date of birth</label>
         <input
           type="number"
           name="date"
-          class="date"
+          class="date input"
           min="1"
           max="31"
+          placeholder="Date of birth"
           required
         />
       </div>
@@ -41,20 +38,44 @@
             class="month input"
             min="1"
             max="12"
+            placeholder="Month of Birth"
           />
         </div>
         <div class="year-info info">
           <label class="label" for="year">Year of birth</label>
-          <input type="number" class="year input" name="year" min="0" />
+          <input
+            type="number"
+            class="year input"
+            name="year"
+            min="0"
+            placeholder="Last two digits of birth year"
+          />
         </div>
         <div class="century-info info">
-          <label for="century">century</label>
-          <input type="number" class="century input" name="century" />
+          <label for="century" class="label">century</label>
+          <input
+            type="number"
+            class="century input"
+            name="century"
+            placeholder="First two digits of birth year"
+          />
         </div>
         <div class="gender-info">
-          <input type="radio" name="gender" value="male" class="gender" />
+          <input
+            type="radio"
+            name="gender"
+            value="male"
+            class="gender"
+            required
+          />
           Male<br />
-          <input type="radio" name="gender" value="female" class="gender" />
+          <input
+            type="radio"
+            name="gender"
+            value="female"
+            class="gender"
+            required
+          />
           Female<br />
         </div>
         <button class="button">Submit</button>

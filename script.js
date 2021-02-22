@@ -4,13 +4,13 @@
 
 // console.log(username);
 document.querySelector(".button").addEventListener("click", function () {
-  let name = document.querySelector(".username").value;
   let date = Number(document.querySelector(".date").value);
   let month = Number(document.querySelector(".month").value);
   let century = Number(document.querySelector(".century").value);
   let year = Number(document.querySelector(".year").value);
   let gender = document.querySelector(".gender").value;
-  console.log(name, date, month, century, year);
+
+  console.log(date, month, century, year);
   function akanDate(dd, mm, cc, yy) {
     return (cc / 4 - 2 * cc - 1 + (5 * yy) / 4 + (26 * (mm + 1)) / 10 + dd) % 7;
   }
