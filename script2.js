@@ -1,6 +1,6 @@
 document.querySelector(".button").addEventListener("click", function () {
   let date = document.querySelector(".date").value;
-  let gender = document.querySelector(".gender-info").value;
+  let gender = document.querySelector(".gender").value;
   let date2 = new Date(date);
   let day = date2.getDay();
 
