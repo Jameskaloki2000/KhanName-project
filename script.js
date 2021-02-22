@@ -1,23 +1,14 @@
-// let username = document.querySelector(".username").value;
-// document.querySelector(".date").value;
-// document.querySelector(".month").value;
-
-// console.log(username);
 document.querySelector(".button").addEventListener("click", function () {
-  let date = Number(document.querySelector(".date").value);
-  let month = Number(document.querySelector(".month").value);
-  let yearCalc = document.querySelector(".year").value;
-  let gender = document.querySelector(".gender").value;
-  let centuryCalc = yearCalc / 100;
-  let century = Math.trunc(centuryCalc);
-  let year = yearCalc[(string.length - 1, string.length - 2)];
+  let date = document.querySelector(".date").value;
 
-  console.log(date, month, century, year);
-  function akanDate(dd, mm, cc, yy) {
-    return (cc / 4 - 2 * cc - 1 + (5 * yy) / 4 + (26 * (mm + 1)) / 10 + dd) % 7;
-  }
-  const day = akanDate(date, month, century, year).toFixed();
+  let gender = document.querySelector(".gender").value;
+  let date2 = new Date(date);
+  let day = date2.getDay();
+
+  console.log(date);
+  console.log(date2);
   console.log(day);
+
   const males = [
     "Sunday: Kwasi",
     "Monday: Kwadwo",
