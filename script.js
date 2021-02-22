@@ -2,14 +2,14 @@ document.querySelector(".button").addEventListener("click", function () {
   let date = document.querySelector(".date").value;
 
   let gender = document.querySelector(".gender").value;
-  document.querySelector(".text-info").textContent =
-    "The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. These 'day' 'names' have further meanings concerning the soul and character of the person.";
+
   let date2 = new Date(date);
   let day = date2.getDay();
 
   console.log(date);
   console.log(date2);
   console.log(day);
+  console.log(gender);
 
   const males = [
     "Sunday: Kwasi",
@@ -32,8 +32,14 @@ document.querySelector(".button").addEventListener("click", function () {
 
   if (gender == "male") {
     alert(males[day]);
+    document.querySelector(
+      ".text-info"
+    ).textContent = `The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. These 'day' 'names' have further meanings concerning the soul and character of the person.Yours is ${males[day]}`;
   } else if (gender == "female") {
     alert(females[day]);
+    document.querySelector(
+      ".text-info"
+    ).textContent = `The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. These 'day' 'names' have further meanings concerning the soul and character of the person.Yours is ${females[day]}`;
   } else {
     alert("null");
   }

@@ -33,14 +33,7 @@ body {
   color: rgb(255, 255, 255);
   font-weight: 400;
 }
-. {
-  width: 100%;
-  overflow: hidden;
-  font-size: 23px;
-  padding: 9px 0;
-  margin: 9px 0;
-  border-bottom: 1px solid lime;
-}
+
 .login-box .info {
   border: none;
   outline: none;
