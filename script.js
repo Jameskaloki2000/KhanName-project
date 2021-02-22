@@ -6,9 +6,11 @@
 document.querySelector(".button").addEventListener("click", function () {
   let date = Number(document.querySelector(".date").value);
   let month = Number(document.querySelector(".month").value);
-  let century = Number(document.querySelector(".century").value);
-  let year = Number(document.querySelector(".year").value);
+  let yearCalc = document.querySelector(".year").value;
   let gender = document.querySelector(".gender").value;
+  let centuryCalc = yearCalc / 100;
+  let century = Math.trunc(centuryCalc);
+  let year = yearCalc[(string.length - 1, string.length - 2)];
 
   console.log(date, month, century, year);
   function akanDate(dd, mm, cc, yy) {
