@@ -1,5 +1,5 @@
-# {The khan name project identifier}
-#### {Brief description of applicatio}, {Date of current version}
+# {The Akan name project identifier}
+#### {This project identifies you Akan Name}, {23rd Febuary 2021}
 #### By **{James Kaloki}**
 ## Description
 {The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. These "day names" have further meanings concerning the soul and character of the person. Middle names have considerably more variety and can refer to their birth order, twin status, or an ancestor's middle name. Here are Ghanian day names.
