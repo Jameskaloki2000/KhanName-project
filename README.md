@@ -37,7 +37,7 @@ Saturday: Ama }
 * Use a browser of choice preferrably Google Chrome 
 * Clone this repository to code editor of choice
 
-{This code does not depend on any other code to run}
+{This code does not depend on any other code to run and has two Javascript files each with different ways of implementing the logic}
 
 ## Technologies Used
 {HTML,CSS and ES6 Javascript }
