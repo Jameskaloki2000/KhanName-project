@@ -89,3 +89,9 @@ div .label {
 .login-box p {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+div .gender-info {
+  cursor: pointer;
+  font-size: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-bottom: lime;
+}
