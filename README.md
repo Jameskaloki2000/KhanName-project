@@ -32,7 +32,8 @@ Thursday:  Yaa
 
 Friday: Afua
 
-Saturday: Ama }
+Saturday: Ama
+This project will request the user to fill a form and give you back your Akan Name}
 ## Setup/Installation Requirements
 * Use a browser of choice preferrably Google Chrome 
 * Clone this repository to code editor of choice
