@@ -41,6 +41,6 @@ document.querySelector(".button").addEventListener("click", function () {
       ".text-info"
     ).textContent = `The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. These 'day' 'names' have further meanings concerning the soul and character of the person.Yours is ${females[day]}`;
   } else {
-    alert("null");
+    alert("Please put in the correct information in the form");
   }
 });
