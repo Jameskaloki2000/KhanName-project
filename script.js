@@ -10,40 +10,50 @@ document.querySelector(".button").addEventListener("click", function () {
   console.log(date);
   console.log(date2);
   console.log(day);
-  console.log(genderMale, genderFemale);
-
+  console.log(genderMale, genderFemale, typeof day);
   const males = [
-    "Sunday: Kwasi",
-    "Monday: Kwadwo",
-    "Tuesday: Kwabena",
-    "Wednesday: Kwaku",
-    "Thursday:  Yaw",
-    "Friday: Kofi",
-    "Saturday: Kwame",
+    " Kwasi",
+    "Kwadwo",
+    " Kwabena",
+    " Kwaku",
+    "  Yaw",
+    "Kofi",
+    " Kwame",
   ];
   const females = [
-    "Sunday: Akosua",
-    "Monday: Adwoa",
-    "Tuesday: Abenaa",
-    "Wednesay: Akua",
-    "Thursday: Yaa",
-    "Friday: Afua",
-    "Saturday: Ama",
+    " Akosua",
+    " Adwoa",
+    " Abenaa",
+    " Akua",
+    " Yaa",
+    " Afua",
+    " Ama",
+  ];
+  const daysOfWeek = [
+    "Sunday: ",
+    "Monday: ",
+    "Tuesday:",
+    "Wednesay:",
+    "Thursday: ",
+    "Friday: ",
+    "Saturday: ",
   ];
 
   if (genderMale) {
-    alert(males[day]);
-    document.querySelector(
-      ".text-info"
-    ).textContent = `The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. These 'day' 'names' have further meanings concerning the soul and character of the person.Yours is ${males[day]}`;
-  } else if (genderFemale) {
-    alert(females[day]);
-    document.querySelector(
-      ".text-info"
-    ).textContent = `The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. These 'day' 'names' have further meanings concerning the soul and character of the person.Yours is ${females[day]}`;
-  } else {
     alert(
-      "Please put in the correct information in the form or fill the whole form"
+      `Your AKan name is ${males[day]} You were born on a ${daysOfWeek[day]}`
     );
+    document.querySelector(
+      ".text-info"
+    ).textContent = `The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. These 'day' 'names' have further meanings concerning the soul and character of the person.`;
+  } else if (genderFemale) {
+    alert(
+      `Your AKan name is ${females[day]} You were born on a ${daysOfWeek[day]}`
+    );
+    document.querySelector(
+      ".text-info"
+    ).textContent = `The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. These 'day' 'names' have further meanings concerning the soul and character of the person.`;
+  } else {
+    alert("Please fill  in the whole form to get back your akan name");
   }
 });
